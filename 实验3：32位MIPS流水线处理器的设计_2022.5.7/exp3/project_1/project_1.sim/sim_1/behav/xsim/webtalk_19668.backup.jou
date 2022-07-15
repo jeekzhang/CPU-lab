@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  5 10:49:48 2022
+# Process ID: 19668
+# Current directory: D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_1/project_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_1/project_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May  3 20:41:11 2022
+# Process ID: 18556
+# Current directory: D:/pj3/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6596 D:\pj3\project_1\project_1.xpr
+# Log file: D:/pj3/project_1/vivado.log
+# Journal file: D:/pj3/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pj3/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/pj3/project_1/testbench_behav.wcfg
+source testbench.tcl
+import_files -norecurse D:/pj3/testbench.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+open_wave_config D:/pj3/project_1/testbench_behav.wcfg
+source testbench.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config D:/pj3/project_1/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/mips/pcsrcD}} 
+relaunch_sim
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/dut/pc}} 
+relaunch_sim
+save_wave_config {D:/pj3/project_1/testbench_behav.wcfg}
+save_wave_config {D:/pj3/project_1/testbench_behav.wcfg}
+save_wave_config {D:/pj3/project_1/testbench_behav.wcfg}
+save_wave_config {D:/pj3/project_1/testbench_behav.wcfg}
+save_wave_config {D:/pj3/project_1/testbench_behav.wcfg}
+close_sim
+close_project
+open_project D:/pj3/project_2/project_2.xpr
+update_compile_order -fileset sources_1

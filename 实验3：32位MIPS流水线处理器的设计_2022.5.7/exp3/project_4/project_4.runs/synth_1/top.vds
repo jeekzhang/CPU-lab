@@ -1,0 +1,784 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  5 20:13:28 2022
+# Process ID: 19208
+# Current directory: D:/332MIPS/exp3/project_4/project_4.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/332MIPS/exp3/project_4/project_4.runs/synth_1/top.vds
+# Journal file: D:/332MIPS/exp3/project_4/project_4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14224 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 339.141 ; gain = 70.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mips' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:242]
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:266]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:296]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:296]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:332]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:336]
+WARNING: [Synth 8-87] always_comb on 'alucontrol_reg' did not result in combinational logic [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:338]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:332]
+INFO: [Synth 8-6157] synthesizing module 'floprc' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:548]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc' (3#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:548]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:536]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:536]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:536]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (4#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:536]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (5#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:266]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:363]
+INFO: [Synth 8-6157] synthesizing module 'hazard' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:449]
+INFO: [Synth 8-6155] done synthesizing module 'hazard' (6#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:449]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:589]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (7#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:589]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:487]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (8#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:487]
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:562]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (9#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:562]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:502]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (10#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:502]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:574]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc' (11#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:574]
+INFO: [Synth 8-6157] synthesizing module 'signext' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:523]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (12#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:523]
+INFO: [Synth 8-6157] synthesizing module 'zeroext' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:529]
+INFO: [Synth 8-6155] done synthesizing module 'zeroext' (13#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:529]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:516]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (14#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:516]
+INFO: [Synth 8-6157] synthesizing module 'eqcmp' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:509]
+INFO: [Synth 8-6155] done synthesizing module 'eqcmp' (15#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:509]
+INFO: [Synth 8-6157] synthesizing module 'floprc__parameterized0' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:548]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc__parameterized0' (15#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:548]
+INFO: [Synth 8-6157] synthesizing module 'floprc__parameterized1' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:548]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc__parameterized1' (15#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:548]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:597]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (16#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:597]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:605]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (17#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:605]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:589]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (17#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:589]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:536]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (17#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:536]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:536]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (17#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:536]
+WARNING: [Synth 8-689] width (1) of port connection 'q' does not match port width (32) of module 'flopr__parameterized1' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:445]
+WARNING: [Synth 8-3848] Net zeroE in module/entity datapath does not have driver. [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:445]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (18#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:363]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (19#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:242]
+INFO: [Synth 8-6157] synthesizing module 'imem' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:51]
+INFO: [Synth 8-3876] $readmem data file 'addfile.dat' is read successfully [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (20#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:51]
+INFO: [Synth 8-6157] synthesizing module 'DataMemoryDecoder' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:24]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:63]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (21#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:63]
+WARNING: [Synth 8-350] instance 'dmem' of module 'dmem' requires 5 connections, but only 4 given [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'IO' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:180]
+INFO: [Synth 8-6155] done synthesizing module 'IO' (22#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:180]
+INFO: [Synth 8-6157] synthesizing module 'mux7seg' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:74]
+INFO: [Synth 8-226] default block is never used [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:87]
+INFO: [Synth 8-226] default block is never used [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:108]
+INFO: [Synth 8-6157] synthesizing module 'Hex7seg' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:135]
+INFO: [Synth 8-6155] done synthesizing module 'Hex7seg' (23#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:135]
+INFO: [Synth 8-6155] done synthesizing module 'mux7seg' (24#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:74]
+WARNING: [Synth 8-3848] Net ReadData1 in module/entity DataMemoryDecoder does not have driver. [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemoryDecoder' (25#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:24]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (8) of module 'DataMemoryDecoder' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'top' (26#1) [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:3]
+WARNING: [Synth 8-3331] design mux7seg has unconnected port d[15]
+WARNING: [Synth 8-3331] design mux7seg has unconnected port d[14]
+WARNING: [Synth 8-3331] design mux7seg has unconnected port d[13]
+WARNING: [Synth 8-3331] design mux7seg has unconnected port d[12]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[31]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[30]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[29]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[28]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[27]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[26]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[25]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[24]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[23]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[22]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[21]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[20]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[19]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[18]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[17]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[16]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[15]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[14]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[13]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 395.074 ; gain = 126.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin r1Z:d[0] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:445]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[31] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[30] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[29] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[28] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[27] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[26] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[25] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[24] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[23] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[22] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[21] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[20] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[19] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[18] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[17] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[16] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[15] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[14] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[13] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[12] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[11] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[10] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[9] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[8] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[7] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[6] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[5] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[4] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[3] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[2] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[1] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+WARNING: [Synth 8-3295] tying undriven pin dmem:wd[0] to constant 0 [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:45]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 395.074 ; gain = 126.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 395.074 ; gain = 126.148
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'SW_IBUF[2]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:266]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:266]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'SW_IBUF[1]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'SW_IBUF[3]'. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:269]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc:269]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 749.074 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 749.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 749.148 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 749.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 749.148 ; gain = 480.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 749.148 ; gain = 480.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 749.148 ; gain = 480.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "RAM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'alucontrol_reg' [D:/332MIPS/exp3/project_4/project_4.srcs/sources_1/new/pj4.sv:338]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 749.148 ; gain = 480.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 19    
+	   4 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input     12 Bit        Muxes := 1     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module floprc 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module flopr__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module hazard 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module flopenrc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module eqcmp 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module floprc__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module floprc__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module flopr__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module flopr__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+Module IO 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mux7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module DataMemoryDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element dmemDecoder/dmem/RAM_reg was removed. 
+WARNING: [Synth 8-3917] design top has port DP driven by constant 1
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[8]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[9]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[10]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[14]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[15]' (FDCE) to 'mips/dp/r2D/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[11]' (FDCE) to 'mips/dp/r2D/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[12]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[13]' (FDCE) to 'mips/dp/r2D/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[4]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[6]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[12]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[13]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[14]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[15]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[16]' (FDC) to 'mips/dp/r3E/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[16]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[17]' (FDC) to 'mips/dp/r3E/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[17]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[18]' (FDC) to 'mips/dp/r3E/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[18]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[19]' (FDC) to 'mips/dp/r3E/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[19]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[20]' (FDC) to 'mips/dp/r3E/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[20]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[21]' (FDC) to 'mips/dp/r3E/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[21]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[22]' (FDC) to 'mips/dp/r3E/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[22]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[23]' (FDC) to 'mips/dp/r3E/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[23]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[24]' (FDC) to 'mips/dp/r3E/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[24]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[25]' (FDC) to 'mips/dp/r3E/q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[25]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[26]' (FDC) to 'mips/dp/r3E/q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[26]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[27]' (FDC) to 'mips/dp/r3E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[27]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[28]' (FDC) to 'mips/dp/r3E/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[28]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[29]' (FDC) to 'mips/dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[29]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[30]' (FDC) to 'mips/dp/r3E/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[30]' (FDC) to 'mips/dp/r2W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[31]' (FDC) to 'mips/dp/r2W/q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[31]' (FDCE) to 'mips/dp/r2D/q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[24]' (FDCE) to 'mips/dp/r2D/q_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips/dp/r2D/q_reg[19] )
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[11]' (FDC) to 'mips/dp/r2W/q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[10]' (FDC) to 'mips/dp/r2W/q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2W/q_reg[9]' (FDC) to 'mips/dp/r2W/q_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips/dp/r2W/q_reg[8] )
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[8]' (FDC) to 'mips/dp/r3E/q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[9]' (FDC) to 'mips/dp/r3E/q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[10]' (FDC) to 'mips/dp/r3E/q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[11]' (FDC) to 'mips/dp/r3E/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[12]' (FDC) to 'mips/dp/r3E/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[13]' (FDC) to 'mips/dp/r3E/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[14]' (FDC) to 'mips/dp/r3E/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[15]' (FDC) to 'mips/dp/r3E/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[3]' (FDC) to 'mips/dp/r6E/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[4]' (FDC) to 'mips/dp/r6E/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[0]' (FDC) to 'mips/dp/r6E/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[4]' (FDC) to 'mips/dp/r3E/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[1]' (FDC) to 'mips/dp/r3E/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[2]' (FDC) to 'mips/dp/r3E/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[6]' (FDC) to 'mips/dp/r4E/q_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 749.148 ; gain = 480.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------------+---------------+----------------+
+|Module Name | RTL Object            | Depth x Width | Implemented As | 
++------------+-----------------------+---------------+----------------+
+|Hex7seg     | A2G                   | 32x7          | LUT            | 
+|top         | dmemDecoder/x7/h7/A2G | 32x7          | LUT            | 
++------------+-----------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------+-----------+----------------------+---------------+
+|top         | mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 749.148 ; gain = 480.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (mips/c/ad/alucontrol_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/ad/alucontrol_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mips/c/ad/alucontrol_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------+-----------+----------------------+---------------+
+|top         | mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     4|
+|4     |LUT2   |    56|
+|5     |LUT3   |    27|
+|6     |LUT4   |    91|
+|7     |LUT5   |   121|
+|8     |LUT6   |   244|
+|9     |MUXF7  |     4|
+|10    |RAM32M |    12|
+|11    |FDCE   |   214|
+|12    |FDRE   |    70|
+|13    |IBUF   |    20|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+-------------------------+------+
+|      |Instance      |Module                   |Cells |
++------+--------------+-------------------------+------+
+|1     |top           |                         |   900|
+|2     |  dmemDecoder |DataMemoryDecoder        |   113|
+|3     |    io        |IO                       |    63|
+|4     |    x7        |mux7seg                  |    50|
+|5     |  mips        |mips                     |   749|
+|6     |    c         |controller               |    17|
+|7     |      regE    |floprc                   |    11|
+|8     |      regM    |flopr                    |     4|
+|9     |      regW    |flopr__parameterized0    |     2|
+|10    |    dp        |datapath                 |   732|
+|11    |      alu     |ALU                      |    35|
+|12    |      comp    |eqcmp                    |     3|
+|13    |      pcadd1  |adder                    |     2|
+|14    |      pcadd2  |adder_0                  |     2|
+|15    |      pcreg   |flopenr                  |    24|
+|16    |      r1D     |flopenr_1                |     9|
+|17    |      r1E     |floprc__parameterized0   |    32|
+|18    |      r1M     |flopr__parameterized1    |    12|
+|19    |      r1W     |flopr__parameterized1_2  |    56|
+|20    |      r2D     |flopenrc                 |   133|
+|21    |      r2E     |floprc__parameterized0_3 |    32|
+|22    |      r2M     |flopr__parameterized1_4  |    62|
+|23    |      r2W     |flopr__parameterized1_5  |    16|
+|24    |      r3E     |floprc__parameterized0_6 |    10|
+|25    |      r3M     |flopr__parameterized2    |   111|
+|26    |      r3W     |flopr__parameterized2_7  |     8|
+|27    |      r4E     |floprc__parameterized1   |    79|
+|28    |      r5E     |floprc__parameterized1_8 |    39|
+|29    |      rf      |regfile                  |    67|
++------+--------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.809 ; gain = 962.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1231.809 ; gain = 608.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.809 ; gain = 962.883
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1231.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 119 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1231.809 ; gain = 962.883
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1231.809 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/332MIPS/exp3/project_4/project_4.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  5 20:14:15 2022...

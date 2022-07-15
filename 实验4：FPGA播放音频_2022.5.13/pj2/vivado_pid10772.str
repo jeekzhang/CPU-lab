@@ -1,0 +1,106 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 10772
+License: Customer
+
+Current time: 	Tue May 10 16:34:49 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 31 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/app/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/app/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Sherlock Yesir
+User home directory: C:/Users/Sherlock Yesir
+User working directory: D:/pj4/project_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/app/Vivado
+HDI_APPROOT: D:/app/Vivado/2018.3
+RDI_DATADIR: D:/app/Vivado/2018.3/data
+RDI_BINDIR: D:/app/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Sherlock Yesir/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Sherlock Yesir/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Sherlock Yesir/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/app/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/pj4/project_1/vivado.log
+Vivado journal file location: 	D:/pj4/project_1/vivado.jou
+Engine tmp dir: 	D:/pj4/project_1/.Xil/Vivado-10772-Laptop-HarmonyOs
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/app/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/app/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/app/Vivado/2018.3
+XILINX_VIVADO: D:/app/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/app/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 700 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\pj4\project_1\project_1.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/pj4/project_1/project_1.xpr 
+// Tcl Message: open_project D:/pj4/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/app/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 86 MB (+87951kb) [00:00:06]
+// [Engine Memory]: 618 MB (+496445kb) [00:00:06]
+// [GUI Memory]: 101 MB (+11067kb) [00:00:06]
+// [Engine Memory]: 697 MB (+50906kb) [00:00:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  2416 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 51 MB. Current time: 5/10/22, 4:34:50 PM CST
+// Project name: project_1; location: D:/pj4/project_1; part: xc7a100tcsg324-1
+// [GUI Memory]: 109 MB (+3328kb) [00:00:09]
+dismissDialog("Open Project"); // bx (cp)

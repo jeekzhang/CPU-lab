@@ -1,0 +1,72 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri May 13 15:28:10 2022
+| Host         : Laptop-HarmonyOs running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pwm_buzzer_control_sets_placed.rpt
+| Design       : pwm_buzzer
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      6 |            1 |
+|      9 |            1 |
+|     11 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              25 |           10 |
+| No           | No                    | Yes                    |              18 |            6 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              17 |            6 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+-----------------+------------------+------------------+----------------+
+|       Clock Signal       |  Enable Signal  | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------+-----------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG           | cnt2[5]_i_1_n_0 | buzzer_i_2_n_0   |                2 |              6 |
+|  cishu_reg[8]_i_2_n_0    |                 |                  |                4 |              9 |
+|  clk_IBUF_BUFG           | cnt01           | buzzer_i_2_n_0   |                4 |             11 |
+|  pre_set_reg[16]_i_2_n_0 |                 |                  |                6 |             16 |
+|  clk_IBUF_BUFG           |                 | buzzer_i_2_n_0   |                6 |             18 |
++--------------------------+-----------------+------------------+------------------+----------------+
+
+

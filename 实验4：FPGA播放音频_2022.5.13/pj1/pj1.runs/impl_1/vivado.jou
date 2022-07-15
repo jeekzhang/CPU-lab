@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 13 14:07:16 2022
+# Process ID: 23908
+# Current directory: D:/pj4/pj1/pj1.runs/impl_1
+# Command line: vivado.exe -log pingpong_music_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pingpong_music_Top.tcl -notrace
+# Log file: D:/pj4/pj1/pj1.runs/impl_1/pingpong_music_Top.vdi
+# Journal file: D:/pj4/pj1/pj1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pingpong_music_Top.tcl -notrace

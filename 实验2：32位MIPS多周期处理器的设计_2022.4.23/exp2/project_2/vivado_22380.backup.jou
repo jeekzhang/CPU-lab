@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 17 09:37:26 2022
+# Process ID: 22380
+# Current directory: D:/pj2/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10680 D:\pj2\project_2\project_2.xpr
+# Log file: D:/pj2/project_2/vivado.log
+# Journal file: D:/pj2/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pj2/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+add_files -norecurse D:/pj2/memfile.dat
+import_files -norecurse D:/pj2/testbench.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+import_files -norecurse D:/pj2/memfile.dat
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+current_wave_config {Untitled 7}
+add_wave {{/testbench/dut/mips}} 
+relaunch_sim
+current_wave_config {Untitled 7}
+add_wave {{/testbench/dut/mips/c/ad/aluop}} 
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+current_wave_config {Untitled 8}
+add_wave {{/testbench/dut/mips/c/ad}} 
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+save_wave_config {D:/pj2/project_2/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/pj2/project_2/testbench_behav.wcfg
+set_property xsim.view D:/pj2/project_2/testbench_behav.wcfg [get_filesets sim_1]
+close_sim

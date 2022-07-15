@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_2/project_2.srcs/sources_1/imports/exp3/testbench.sv,1648272623,systemVerilog,,,,testbench,,,,,,,,
+D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_2/project_2.srcs/sources_1/new/pj2.sv,1651727130,systemVerilog,,D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_2/project_2.srcs/sources_1/imports/exp3/testbench.sv,,ALU;adder;aludec;controller;datapath;dmem;eqcmp;flopenr;flopenrc;flopr;floprc;hazard;imem;maindec;mips;mux2;mux3;regfile;signext;sl2;top;zeroext,,,,,,,,

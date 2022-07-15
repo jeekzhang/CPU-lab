@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  4 09:12:34 2022
+# Process ID: 9428
+# Current directory: D:/pj3/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16432 D:\pj3\project_2\project_2.xpr
+# Log file: D:/pj3/project_2/vivado.log
+# Journal file: D:/pj3/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pj3/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/pj3/project_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/pj3/project_2/testbench_behav.wcfg
+source testbench.tcl
+export_ip_user_files -of_objects  [get_files D:/pj3/addfile.dat] -no_script -reset -force -quiet
+remove_files  D:/pj3/addfile.dat
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse D:/pj3/memfile.dat
+close_sim
+launch_simulation
+open_wave_config D:/pj3/project_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+close_project
+open_project D:/pj3/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/pj3/project_1/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/pj3/project_1/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+close_project
+open_project D:/pj3/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+import_files -norecurse D:/pj3/memfile.dat
+launch_simulation
+open_wave_config D:/pj3/project_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/pj3/project_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+close_project
+open_project D:/pj1/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/pj1/project_4/project_4.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/pj1/project_4/project_4.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/pj1/project_4/project_4.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

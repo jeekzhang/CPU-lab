@@ -1,0 +1,39 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/app/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto adc731b524bb42d5988f878aab2ed94c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.floprc
+Compiling module xil_defaultlib.flopr(WIDTH=3)
+Compiling module xil_defaultlib.flopr(WIDTH=2)
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.flopenr(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.floprc(WIDTH=32)
+Compiling module xil_defaultlib.floprc(WIDTH=5)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.flopr(WIDTH=5)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

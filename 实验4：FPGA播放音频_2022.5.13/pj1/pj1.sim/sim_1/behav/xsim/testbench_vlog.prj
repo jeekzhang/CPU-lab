@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../pj1.srcs/sources_1/ip/SuperMario/sim/SuperMario.v" \
+
+sv xil_defaultlib  \
+"../../../../pj1.srcs/sources_1/imports/new/clk2MHz.sv" \
+"../../../../pj1.srcs/sources_1/new/music.sv" \
+"../../../../pj1.srcs/sources_1/new/pingpong_music_Top.sv" \
+"../../../../pj1.srcs/sources_1/imports/pj4/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

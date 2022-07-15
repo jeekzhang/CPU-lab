@@ -1,0 +1,352 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue May 10 08:47:57 2022
+| Host         : Laptop-HarmonyOs running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'SuperMario'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of SuperMario (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 4) to (Rev. 2)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value 'true' on parameter 'Load Init File' due to the following failure - 
+Validation failed for parameter 'Coe File(Coe_File)' with value 'no_coe_file_loaded' for IP 'SuperMario'. No COE file loaded
+. Restoring to an old valid value of 'false'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 -user_name SuperMario
+set_property -dict "\
+  CONFIG.AXI_ID_Width {4} \
+  CONFIG.AXI_Slave_Type {Memory_Slave} \
+  CONFIG.AXI_Type {AXI4_Full} \
+  CONFIG.Additional_Inputs_for_Power_Estimation {false} \
+  CONFIG.Algorithm {Minimum_Area} \
+  CONFIG.Assume_Synchronous_Clk {false} \
+  CONFIG.BRAM_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.BRAM_PORTA.MEM_ECC {NONE} \
+  CONFIG.BRAM_PORTA.MEM_SIZE {8192} \
+  CONFIG.BRAM_PORTA.MEM_WIDTH {32} \
+  CONFIG.BRAM_PORTA.READ_LATENCY {1} \
+  CONFIG.BRAM_PORTA.READ_WRITE_MODE {} \
+  CONFIG.Byte_Size {9} \
+  CONFIG.CLK.ACLK.ASSOCIATED_BUSIF {AXI_SLAVE_S_AXI:AXILite_SLAVE_S_AXI} \
+  CONFIG.CLK.ACLK.ASSOCIATED_RESET {s_aresetn} \
+  CONFIG.CLK.ACLK.CLK_DOMAIN {} \
+  CONFIG.CLK.ACLK.FREQ_HZ {100000000} \
+  CONFIG.CLK.ACLK.INSERT_VIP {0} \
+  CONFIG.CLK.ACLK.PHASE {0.000} \
+  CONFIG.CTRL_ECC_ALGO {NONE} \
+  CONFIG.Coe_File {../../../../SuperMario.coe} \
+  CONFIG.Collision_Warnings {ALL} \
+  CONFIG.Component_Name {SuperMario} \
+  CONFIG.Disable_Collision_Warnings {false} \
+  CONFIG.Disable_Out_of_Range_Warnings {false} \
+  CONFIG.ECC {false} \
+  CONFIG.EN_DEEPSLEEP_PIN {false} \
+  CONFIG.EN_ECC_PIPE {false} \
+  CONFIG.EN_SAFETY_CKT {false} \
+  CONFIG.EN_SHUTDOWN_PIN {false} \
+  CONFIG.EN_SLEEP_PIN {false} \
+  CONFIG.Enable_32bit_Address {false} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Enable_B {Always_Enabled} \
+  CONFIG.Error_Injection_Type {Single_Bit_Error_Injection} \
+  CONFIG.Fill_Remaining_Memory_Locations {false} \
+  CONFIG.Interface_Type {Native} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.MEM_FILE {no_mem_loaded} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Operating_Mode_A {WRITE_FIRST} \
+  CONFIG.Operating_Mode_B {WRITE_FIRST} \
+  CONFIG.Output_Reset_Value_A {0} \
+  CONFIG.Output_Reset_Value_B {0} \
+  CONFIG.PRIM_type_to_Implement {BRAM} \
+  CONFIG.Pipeline_Stages {0} \
+  CONFIG.Port_A_Clock {100} \
+  CONFIG.Port_A_Enable_Rate {100} \
+  CONFIG.Port_A_Write_Rate {0} \
+  CONFIG.Port_B_Clock {0} \
+  CONFIG.Port_B_Enable_Rate {0} \
+  CONFIG.Port_B_Write_Rate {0} \
+  CONFIG.Primitive {8kx2} \
+  CONFIG.RD_ADDR_CHNG_A {false} \
+  CONFIG.RD_ADDR_CHNG_B {false} \
+  CONFIG.READ_LATENCY_A {1} \
+  CONFIG.READ_LATENCY_B {1} \
+  CONFIG.RST.ARESETN.INSERT_VIP {0} \
+  CONFIG.RST.ARESETN.POLARITY {ACTIVE_LOW} \
+  CONFIG.Read_Width_A {8} \
+  CONFIG.Read_Width_B {8} \
+  CONFIG.Register_PortA_Output_of_Memory_Core {false} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
+  CONFIG.Register_PortB_Output_of_Memory_Core {false} \
+  CONFIG.Register_PortB_Output_of_Memory_Primitives {false} \
+  CONFIG.Remaining_Memory_Locations {0} \
+  CONFIG.Reset_Memory_Latch_A {false} \
+  CONFIG.Reset_Memory_Latch_B {false} \
+  CONFIG.Reset_Priority_A {CE} \
+  CONFIG.Reset_Priority_B {CE} \
+  CONFIG.Reset_Type {SYNC} \
+  CONFIG.Use_AXI_ID {false} \
+  CONFIG.Use_Byte_Write_Enable {false} \
+  CONFIG.Use_Error_Injection_Pins {false} \
+  CONFIG.Use_REGCEA_Pin {false} \
+  CONFIG.Use_REGCEB_Pin {false} \
+  CONFIG.Use_RSTA_Pin {false} \
+  CONFIG.Use_RSTB_Pin {false} \
+  CONFIG.Write_Depth_A {106353} \
+  CONFIG.Write_Width_A {8} \
+  CONFIG.Write_Width_B {8} \
+  CONFIG.ecctype {No_ECC} \
+  CONFIG.register_porta_input_of_softecc {false} \
+  CONFIG.register_portb_output_of_softecc {false} \
+  CONFIG.softecc {false} \
+  CONFIG.use_bram_block {Stand_Alone} " [get_ips SuperMario]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue May 10 08:47:19 2022
+| Host         : Laptop-HarmonyOs running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fudan320x320'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Fudan320x320 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 4) to (Rev. 2)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value 'true' on parameter 'Load Init File' due to the following failure - 
+Validation failed for parameter 'Coe File(Coe_File)' with value 'no_coe_file_loaded' for IP 'Fudan320x320'. No COE file loaded
+. Restoring to an old valid value of 'false'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 -user_name Fudan320x320
+set_property -dict "\
+  CONFIG.AXI_ID_Width {4} \
+  CONFIG.AXI_Slave_Type {Memory_Slave} \
+  CONFIG.AXI_Type {AXI4_Full} \
+  CONFIG.Additional_Inputs_for_Power_Estimation {false} \
+  CONFIG.Algorithm {Minimum_Area} \
+  CONFIG.Assume_Synchronous_Clk {false} \
+  CONFIG.BRAM_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.BRAM_PORTA.MEM_ECC {NONE} \
+  CONFIG.BRAM_PORTA.MEM_SIZE {8192} \
+  CONFIG.BRAM_PORTA.MEM_WIDTH {32} \
+  CONFIG.BRAM_PORTA.READ_LATENCY {1} \
+  CONFIG.BRAM_PORTA.READ_WRITE_MODE {} \
+  CONFIG.Byte_Size {9} \
+  CONFIG.CLK.ACLK.ASSOCIATED_BUSIF {AXI_SLAVE_S_AXI:AXILite_SLAVE_S_AXI} \
+  CONFIG.CLK.ACLK.ASSOCIATED_RESET {s_aresetn} \
+  CONFIG.CLK.ACLK.CLK_DOMAIN {} \
+  CONFIG.CLK.ACLK.FREQ_HZ {100000000} \
+  CONFIG.CLK.ACLK.INSERT_VIP {0} \
+  CONFIG.CLK.ACLK.PHASE {0.000} \
+  CONFIG.CTRL_ECC_ALGO {NONE} \
+  CONFIG.Coe_File {../../../../FudanGray.coe} \
+  CONFIG.Collision_Warnings {ALL} \
+  CONFIG.Component_Name {Fudan320x320} \
+  CONFIG.Disable_Collision_Warnings {false} \
+  CONFIG.Disable_Out_of_Range_Warnings {false} \
+  CONFIG.ECC {false} \
+  CONFIG.EN_DEEPSLEEP_PIN {false} \
+  CONFIG.EN_ECC_PIPE {false} \
+  CONFIG.EN_SAFETY_CKT {false} \
+  CONFIG.EN_SHUTDOWN_PIN {false} \
+  CONFIG.EN_SLEEP_PIN {false} \
+  CONFIG.Enable_32bit_Address {false} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Enable_B {Always_Enabled} \
+  CONFIG.Error_Injection_Type {Single_Bit_Error_Injection} \
+  CONFIG.Fill_Remaining_Memory_Locations {false} \
+  CONFIG.Interface_Type {Native} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.MEM_FILE {no_mem_loaded} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Operating_Mode_A {WRITE_FIRST} \
+  CONFIG.Operating_Mode_B {WRITE_FIRST} \
+  CONFIG.Output_Reset_Value_A {0} \
+  CONFIG.Output_Reset_Value_B {0} \
+  CONFIG.PRIM_type_to_Implement {BRAM} \
+  CONFIG.Pipeline_Stages {0} \
+  CONFIG.Port_A_Clock {100} \
+  CONFIG.Port_A_Enable_Rate {100} \
+  CONFIG.Port_A_Write_Rate {0} \
+  CONFIG.Port_B_Clock {0} \
+  CONFIG.Port_B_Enable_Rate {0} \
+  CONFIG.Port_B_Write_Rate {0} \
+  CONFIG.Primitive {8kx2} \
+  CONFIG.RD_ADDR_CHNG_A {false} \
+  CONFIG.RD_ADDR_CHNG_B {false} \
+  CONFIG.READ_LATENCY_A {1} \
+  CONFIG.READ_LATENCY_B {1} \
+  CONFIG.RST.ARESETN.INSERT_VIP {0} \
+  CONFIG.RST.ARESETN.POLARITY {ACTIVE_LOW} \
+  CONFIG.Read_Width_A {12} \
+  CONFIG.Read_Width_B {12} \
+  CONFIG.Register_PortA_Output_of_Memory_Core {false} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Register_PortB_Output_of_Memory_Core {false} \
+  CONFIG.Register_PortB_Output_of_Memory_Primitives {false} \
+  CONFIG.Remaining_Memory_Locations {0} \
+  CONFIG.Reset_Memory_Latch_A {false} \
+  CONFIG.Reset_Memory_Latch_B {false} \
+  CONFIG.Reset_Priority_A {CE} \
+  CONFIG.Reset_Priority_B {CE} \
+  CONFIG.Reset_Type {SYNC} \
+  CONFIG.Use_AXI_ID {false} \
+  CONFIG.Use_Byte_Write_Enable {false} \
+  CONFIG.Use_Error_Injection_Pins {false} \
+  CONFIG.Use_REGCEA_Pin {false} \
+  CONFIG.Use_REGCEB_Pin {false} \
+  CONFIG.Use_RSTA_Pin {false} \
+  CONFIG.Use_RSTB_Pin {false} \
+  CONFIG.Write_Depth_A {102400} \
+  CONFIG.Write_Width_A {12} \
+  CONFIG.Write_Width_B {12} \
+  CONFIG.ecctype {No_ECC} \
+  CONFIG.register_porta_input_of_softecc {false} \
+  CONFIG.register_portb_output_of_softecc {false} \
+  CONFIG.softecc {false} \
+  CONFIG.use_bram_block {Stand_Alone} " [get_ips Fudan320x320]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue May 10 08:46:25 2022
+| Host         : Laptop-HarmonyOs running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ASCII_ROM'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of ASCII_ROM (xilinx.com:ip:dist_mem_gen:8.0) from (Rev. 13) to (Rev. 12)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'ASCII_ROM'. These changes may impact your design.
+
+
+-Upgraded port 'a' width 6 differs from original width 11
+
+-Upgraded port 'spo' width 16 differs from original width 8
+
+-Upgrade has added port 'clk'
+
+-Upgrade has added port 'd'
+
+-Upgrade has added port 'we'
+
+
+4. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Customization errors found on 'ASCII_ROM'. Restoring to previous valid configuration.
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:dist_mem_gen:8.0 -user_name ASCII_ROM
+set_property -dict "\
+  CONFIG.Component_Name {ASCII_ROM} \
+  CONFIG.Pipeline_Stages {0} \
+  CONFIG.ce_overrides {ce_overrides_sync_controls} \
+  CONFIG.coefficient_file {../../../../ASCII.coe} \
+  CONFIG.common_output_ce {false} \
+  CONFIG.common_output_clk {false} \
+  CONFIG.data_width {8} \
+  CONFIG.default_data {0} \
+  CONFIG.default_data_radix {16} \
+  CONFIG.depth {2048} \
+  CONFIG.dual_port_address {non_registered} \
+  CONFIG.dual_port_output_clock_enable {false} \
+  CONFIG.input_clock_enable {false} \
+  CONFIG.input_options {non_registered} \
+  CONFIG.memory_type {rom} \
+  CONFIG.output_options {non_registered} \
+  CONFIG.qualify_we_with_i_ce {false} \
+  CONFIG.reset_qdpo {false} \
+  CONFIG.reset_qsdpo {false} \
+  CONFIG.reset_qspo {false} \
+  CONFIG.simple_dual_port_address {non_registered} \
+  CONFIG.simple_dual_port_output_clock_enable {false} \
+  CONFIG.single_port_output_clock_enable {false} \
+  CONFIG.sync_reset_qdpo {false} \
+  CONFIG.sync_reset_qsdpo {false} \
+  CONFIG.sync_reset_qspo {false} " [get_ips ASCII_ROM]
+
+

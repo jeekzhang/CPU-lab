@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 19 18:04:12 2022
+# Process ID: 49860
+# Current directory: D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计_叶兴松_20307130227_2022.5.7/exp3/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49732 D:\大二下学习资料\计算机组成\实验3：32位MIPS流水线处理器的设计_叶兴松_20307130227_2022.5.7\exp3\project_1\project_1.xpr
+# Log file: D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计_叶兴松_20307130227_2022.5.7/exp3/project_1/vivado.log
+# Journal file: D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计_叶兴松_20307130227_2022.5.7/exp3/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计_叶兴松_20307130227_2022.5.7/exp3/project_1/project_1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计_叶兴松_20307130227_2022.5.7/exp3/project_1'
+INFO: [Project 1-313] Project file moved from 'D:/大二下学习资料/计算机组成/实验3：32位MIPS流水线处理器的设计/exp3/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/app/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 18:06:16 2022...
+compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 18:06:26 2022...

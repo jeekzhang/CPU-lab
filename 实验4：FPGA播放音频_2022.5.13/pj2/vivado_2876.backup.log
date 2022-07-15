@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 12 20:21:23 2022
+# Process ID: 2876
+# Current directory: D:/pj4/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21872 D:\pj4\project_1\project_1.xpr
+# Log file: D:/pj4/project_1/vivado.log
+# Journal file: D:/pj4/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pj4/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/app/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu May 12 20:42:41 2022] Launched synth_1...
+Run output will be captured here: D:/pj4/project_1/project_1.runs/synth_1/runme.log
+[Thu May 12 20:42:41 2022] Launched impl_1...
+Run output will be captured here: D:/pj4/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu May 12 20:45:12 2022] Launched synth_1...
+Run output will be captured here: D:/pj4/project_1/project_1.runs/synth_1/runme.log
+[Thu May 12 20:45:12 2022] Launched impl_1...
+Run output will be captured here: D:/pj4/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744765A
+set_property PROGRAM.FILE {D:/pj4/project_1/project_1.runs/impl_1/pwm_buzzer.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/pj4/project_1/project_1.runs/impl_1/pwm_buzzer.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_project D:/pj4/pj1/pj1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/app/Vivado/2018.3/data/ip'.
+current_project project_1
+close_project
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/light.coe' provided. It will be converted relative to IP Instance files '../../../../../../light.coe'

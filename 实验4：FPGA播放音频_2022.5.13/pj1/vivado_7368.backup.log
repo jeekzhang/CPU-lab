@@ -1,0 +1,177 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 10 09:04:59 2022
+# Process ID: 7368
+# Current directory: D:/pj4/pj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2052 D:\pj4\pj1\pj1.xpr
+# Log file: D:/pj4/pj1/vivado.log
+# Journal file: D:/pj4/pj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pj4/pj1/pj1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/app/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/pj4/pj1/pj1.srcs/sources_1/imports/new/VGA640x480.sv] -no_script -reset -force -quiet
+remove_files  D:/pj4/pj1/pj1.srcs/sources_1/imports/new/VGA640x480.sv
+file delete -force D:/pj4/pj1/pj1.srcs/sources_1/imports/new/VGA640x480.sv
+export_ip_user_files -of_objects  [get_files D:/pj4/pj1/pj1.srcs/sources_1/new/clk60Hz.sv] -no_script -reset -force -quiet
+remove_files  D:/pj4/pj1/pj1.srcs/sources_1/new/clk60Hz.sv
+file delete -force D:/pj4/pj1/pj1.srcs/sources_1/new/clk60Hz.sv
+export_ip_user_files -of_objects  [get_files D:/pj4/pj1/pj1.srcs/sources_1/imports/new/clkDiv.sv] -no_script -reset -force -quiet
+remove_files  D:/pj4/pj1/pj1.srcs/sources_1/imports/new/clkDiv.sv
+file delete -force D:/pj4/pj1/pj1.srcs/sources_1/imports/new/clkDiv.sv
+export_ip_user_files -of_objects  [get_files D:/pj4/pj1/pj1.srcs/sources_1/new/pingpong_screen_pic.sv] -no_script -reset -force -quiet
+remove_files  D:/pj4/pj1/pj1.srcs/sources_1/new/pingpong_screen_pic.sv
+file delete -force D:/pj4/pj1/pj1.srcs/sources_1/new/pingpong_screen_pic.sv
+export_ip_user_files -of_objects  [get_files D:/pj4/pj1/pj1.srcs/sources_1/ip/Fudan320x320/Fudan320x320.xci] -no_script -reset -force -quiet
+remove_files  D:/pj4/pj1/pj1.srcs/sources_1/ip/Fudan320x320/Fudan320x320.xci
+file delete -force D:/pj4/pj1/pj1.srcs/sources_1/ip/Fudan320x320.xcix
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue May 10 09:14:52 2022] Launched synth_1...
+Run output will be captured here: D:/pj4/pj1/pj1.runs/synth_1/runme.log
+[Tue May 10 09:14:52 2022] Launched impl_1...
+Run output will be captured here: D:/pj4/pj1/pj1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744765A
+set_property PROGRAM.FILE {D:/pj4/pj1/pj1.runs/impl_1/pingpong_music_Top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/pj4/pj1/pj1.runs/impl_1/pingpong_music_Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pj4/pj1/pj1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/app/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/pj4/pj1/pj1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pingpong_music_Top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/pj4/pj1/pj1.sim/sim_1/behav/xsim/FudanGray.coe'
+INFO: [SIM-utils-43] Exported 'D:/pj4/pj1/pj1.sim/sim_1/behav/xsim/SuperMario.coe'
+INFO: [SIM-utils-43] Exported 'D:/pj4/pj1/pj1.sim/sim_1/behav/xsim/ASCII.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/pj4/pj1/pj1.srcs/sources_1/ip/ASCII_ROM/ASCII_ROM.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pj4/pj1/pj1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pingpong_music_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pj4/pj1/pj1.srcs/sources_1/ip/SuperMario/sim/SuperMario.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SuperMario
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pj4/pj1/pj1.srcs/sources_1/imports/new/clk2MHz.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk2MHz
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pj4/pj1/pj1.srcs/sources_1/new/music.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module music
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/pj4/pj1/pj1.srcs/sources_1/new/pingpong_music_Top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pingpong_music_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pj4/pj1/pj1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pj4/pj1/pj1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/app/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 075b01fdf5a6435a8e8776aa0a7e172d --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pingpong_music_Top_behav xil_defaultlib.pingpong_music_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/pj4/pj1/pj1.srcs/sources_1/ip/SuperMario/sim/SuperMario.v" Line 55. Module SuperMario has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=3,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="SuperMario.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=8,C_READ_WIDTH_A=8,C_WRITE_DEPTH_A=106353,C_READ_DEPTH_A=106353,C_ADDRA_WIDTH=17,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=8,C_READ_WIDTH_B=8,C_WRITE_DEPTH_B=106353,C_READ_DEPTH_B=106353,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="26",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.326399_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1951. Module blk_mem_gen_v8_4_2_mem_module(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_MEM_TYPE=3,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="SuperMario.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=8,C_READ_WIDTH_A=8,C_WRITE_DEPTH_A=106353,C_READ_DEPTH_A=106353,C_ADDRA_WIDTH=17,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=8,C_READ_WIDTH_B=8,C_WRITE_DEPTH_B=106353,C_READ_DEPTH_B=106353,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=3,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="SuperMario.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=8,C_READ_WIDTH_A=8,C_WRITE_DEPTH_A=106353,C_READ_DEPTH_A=106353,C_ADDRA_WIDTH=17,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=8,C_READ_WIDTH_B=8,C_WRITE_DEPTH_B=106353,C_READ_DEPTH_B=106353,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="26",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.326399_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=3,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="SuperMario.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=8,C_READ_WIDTH_A=8,C_WRITE_DEPTH_A=106353,C_READ_DEPTH_A=106353,C_ADDRA_WIDTH=17,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=8,C_READ_WIDTH_B=8,C_WRITE_DEPTH_B=106353,C_READ_DEPTH_B=106353,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="26",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.326399_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=3,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="SuperMario.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=8,C_READ_WIDTH_A=8,C_WRITE_DEPTH_A=106353,C_READ_DEPTH_A=106353,C_ADDRA_WIDTH=17,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=8,C_READ_WIDTH_B=8,C_WRITE_DEPTH_B=106353,C_READ_DEPTH_B=106353,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="26",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.326399_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=3,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="SuperMario.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=8,C_READ_WIDTH_A=8,C_WRITE_DEPTH_A=106353,C_READ_DEPTH_A=106353,C_ADDRA_WIDTH=17,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=8,C_READ_WIDTH_B=8,C_WRITE_DEPTH_B=106353,C_READ_DEPTH_B=106353,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="26",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.326399_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=3,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="SuperMario.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=8,C_READ_WIDTH_A=8,C_WRITE_DEPTH_A=106353,C_READ_DEPTH_A=106353,C_ADDRA_WIDTH=17,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=8,C_READ_WIDTH_B=8,C_WRITE_DEPTH_B=106353,C_READ_DEPTH_B=106353,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="26",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.326399_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_2(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=3,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="SuperMario.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=8,C_READ_WIDTH_A=8,C_WRITE_DEPTH_A=106353,C_READ_DEPTH_A=106353,C_ADDRA_WIDTH=17,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=8,C_READ_WIDTH_B=8,C_WRITE_DEPTH_B=106353,C_READ_DEPTH_B=106353,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="26",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.326399_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1563. Module blk_mem_gen_v8_4_2_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_DATA_WIDTH=8,C_ADDRB_WIDTH=17,C_HAS_MEM_OUTPUT_REGS=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1563. Module blk_mem_gen_v8_4_2_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_DATA_WIDTH=8,C_ADDRB_WIDTH=17,NUM_STAGES=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1859. Module blk_mem_gen_v8_4_2_softecc_output_reg_stage(C_DATA_WIDTH=8,C_ADDRB_WIDTH=17) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/pj4/pj1/pj1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk2MHz
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.SuperMario
+Compiling module xil_defaultlib.music
+Compiling module xil_defaultlib.pingpong_music_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pingpong_music_Top_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/pj4/pj1/pj1.sim/sim_1/behav/xsim/xsim.dir/pingpong_music_Top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 10 09:21:29 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2013.539 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/pj4/pj1/pj1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pingpong_music_Top_behav -key {Behavioral:sim_1:Functional:pingpong_music_Top} -tclbatch {pingpong_music_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source pingpong_music_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module pingpong_music_Top.M1.M1.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pingpong_music_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2022.895 ; gain = 10.023
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292744765A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 09:22:10 2022...

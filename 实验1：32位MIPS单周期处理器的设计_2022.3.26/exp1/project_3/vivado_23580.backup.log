@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Mar 26 12:56:10 2022
+# Process ID: 23580
+# Current directory: D:/fcs/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18884 D:\fcs\project_3\project_2.xpr
+# Log file: D:/fcs/project_3/vivado.log
+# Journal file: D:/fcs/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fcs/project_3/project_2.xpr
+INFO: [Project 1-313] Project file moved from 'D:/fcs/project_2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/app/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 26 12:57:56 2022...
+O: [Common 17-344] 'tclapp::load_apps' was cancelled
+1
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 26 12:57:03 2022...

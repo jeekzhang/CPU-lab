@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/fcs/project_3/project_3.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/fcs/project_3/project_3.srcs/sources_1/new/top.sv,1648270516,systemVerilog,,D:/fcs/testbench_2.sv,,ALU;DataMemoryDecoder;Hex7seg;IO;adder;aludec;controller;datapath;dmem;flopr;imem;maindec;mips;mux2;mux7seg;regfile;signext;sl2;top;zeroext,,,,,,,,
+D:/fcs/testbench_2.sv,1648265015,systemVerilog,,,,testbench,,,,,,,,
